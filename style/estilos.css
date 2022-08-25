@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Roboto:ital@1&family=Secular+One&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: whitesmoke;
+  background-position: cover;
+  background-repeat: repeat;
+}
+
+h1 {
+  font-style: italic;
+  font-weight: bolder;
+  font-family: "Roboto", sans-serif;
+  text-align: start;
+  color: black;
+  padding: 30px;
+  font-size: 50px;
+}
+
+h2 {
+  font-family: "Nunito", sans-serif;
+  text-transform: inherit;
+  font-weight: bolder;
+  font-size: 32px;
+  color: black;
+  background-color: #DFE0DF;
+  border: 2px inset #008972;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.parrafouno {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+}
+
+.texmapa {
+  font-family: "Nunito", sans-serif;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 0;
+  margin-top: 60px;
+  background-color: #DFE0DF;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 15px;
+}
+
+.iconfooter {
+  display: flex;
+  justify-content: center;
+}
+
+.mover {
+  display: flex;
+  justify-content: space-around;
+}
+
+.grilla2 div:hover {
+  transform: scale(1.1);
+}
+
+.sectionflex div:hover {
+  transform: scale(1.1);
+}
+
+.sectionflex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 4em;
+  background-image: linear-gradient(#000000, #0b9ad0);
+}
+
+.sectionflex img {
+  border: 5px solid #00C0A6;
+  width: 23rem;
+  height: 90%;
+  margin-top: 20px;
+}
+
+.flexbots {
+  display: flex;
+  justify-content: center;
+  margin: 4em;
+}
+
+.flexbots img {
+  height: 90%;
+  margin-top: 20px;
+}
+
+.flexbots div:hover {
+  transform: scale(1.1);
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.grilla, .marcas {
+  background-color: white;
+}
+
+.marcas {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.btn--whatsapp {
+  background-color: #71ee55;
+}
+
+.btn--facebook {
+  background-color: #3a5795;
+}
+
+.btn--instagram {
+  background-color: #ffa500;
+}
+
+.parrafouno {
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  text-transform: initial;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  padding: 23px;
+  font-size: 24px;
+  color: black;
+}
+
+.buyboton {
+  display: flex;
+  justify-content: center;
+  padding: 4px 80px;
+  text-align: center;
+}
+
+.map-responsive {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  overflow: hidden;
+  padding-bottom: 40%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}/*# sourceMappingURL=estilos.css.map */

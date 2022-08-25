@@ -1,0 +1,132 @@
+@import "variableGlobal";
+@import "fuentes";
+@import "generales";
+@import "parrafos";
+@import "footer";
+
+
+.mover{
+    display: flex;
+    justify-content: space-around;
+} 
+
+
+.grilla2 div:hover{
+    transform: scale(1.1);
+}
+
+
+.sectionflex div:hover{
+    transform: scale(1.1);
+} 
+
+.sectionflex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:4em;
+    background-image: linear-gradient(#000000,#0b9ad0)
+
+}
+.sectionflex img{
+    border: 5px solid #00C0A6;
+    width: 23rem; 
+    height: 90%;
+    margin-top: 20px;
+} 
+
+.flexbots{
+    display: flex;
+    justify-content: center;
+    margin:4em;
+} 
+
+.flexbots img{
+
+    height: 90%;
+    margin-top: 20px;
+}
+
+.flexbots div:hover{
+    transform: scale(1.1);
+} 
+
+@keyframes slidein{
+    from {
+    margin-left: 100%;
+    width: 300%
+    }
+
+    to {
+    margin-left: 0%;
+    width: 100%;
+    }
+}
+
+.grilla{
+    background-color: white;
+}
+
+.marcas{
+    @extend .grilla;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+
+$redes: (
+    whatsapp: #71ee55,
+    facebook:#3a5795,
+    instagram: #ffa500,
+);
+
+
+@each $red, $color in $redes {
+    .btn--#{$red}{
+        background-color: $color;
+    }
+}
+
+@mixin fondo {
+    background-color: $White
+}
+
+.parrafouno{
+    @include fondo;
+    font-family: 'Roboto', sans-serif;
+    text-transform:initial;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    padding: 23px;
+    font-size: 24px;
+    color:black;
+}
+
+.buyboton{
+    display: flex;
+    justify-content: center;
+    padding: 4px 80px;
+    text-align: center;
+}
+
+.map-responsive{
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    overflow:hidden;
+    padding-bottom:40%;
+    position:relative;
+    height:0;
+    
+}
+
+.map-responsive iframe{
+
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
